@@ -1,0 +1,11 @@
+discovery:
+  jobs:
+    - region: eu-west-1
+      type: "ec"
+      metrics:
+        - name: CPUUtilization
+          statistics:
+            - 'Maximum'
+          period: 300
+          length: 60
+          nilToZero: true
